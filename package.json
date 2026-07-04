@@ -3,7 +3,9 @@
   "private": true,
   "scripts": {
     "install:all": "npm install --prefix ideal && npm install --prefix hotelsPro--server",
-    "dev": "concurrently --names \"frontend,backend\" --prefix-colors \"cyan,yellow\" \"npm run dev --prefix ideal\" \"npm run dev --prefix hotelsPro--server\""
+    "dev": "concurrently --names \"frontend,backend\" --prefix-colors \"cyan,yellow\" \"npm run dev --prefix ideal\" \"npm run dev --prefix hotelsPro--server\"",
+    "build": "concurrently --names \"frontend,backend\" --prefix-colors \"cyan,yellow\" \"npm run build --prefix ideal\" \"npm run build --prefix hotelsPro--server\"",
+    "start": "concurrently --names \"frontend,backend\" --prefix-colors \"cyan,yellow\" \"npm start --prefix ideal\" \"npm start --prefix hotelsPro--server\""
   },
   "devDependencies": {
     "concurrently": "^9.0.0"
